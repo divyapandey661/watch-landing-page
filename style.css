@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080d19;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 30px 8%;
+}
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 28px; 
+    margin-bottom: 100px;
+}
+
+.logo {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-btn,
+.hero-btn {
+    background: #00d9ff;
+    border: none;
+    height:50px;
+    font-size: 20px;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    min-height: 350px;
+}
+
+.content {
+    width: 50%;
+}
+
+.title {
+    font-size: 58px;
+    color: #00d9ff;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.description {
+    color: #b5b5b5;
+    line-height: 1.7;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.imageBox {
+    width: 40%;
+    height: 350px;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.watch {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Feature Cards */
+
+.features {
+    display: flex;
+    gap: 20px;
+    margin-top: 70px;
+}
+
+.card {
+    background: #14243d;
+    padding: 55px;
+    border-radius: 12px;
+    font-size: 20px;
+    text-align: center;
+    flex: 1;
+    border: 1px solid #263d5e;
+}
+
+.card h3 {
+    color: #00d9ff;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #b5b5b5;
+    line-height: 1.5;
+}
+
+/* Responsive */
+
+@media(max-width: 768px) {
+
+    body {
+        padding: 20px;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-bottom: 50px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content,
+    .imageBox {
+        width: 100%;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+}
